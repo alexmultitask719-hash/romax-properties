@@ -207,7 +207,7 @@ var grid=document.getElementById("grid"),chips=document.getElementById("chips"),
 
 function pic(src,label){
  var d=document.createElement("div");d.className="ph";
- var i=new Image();i.alt=label;i.loading="lazy";i.src=BASE+src;
+ var i=new Image();i.alt=label;i.src=BASE+src;
  i.onload=function(){d.textContent="";d.appendChild(i)};
  d.textContent="Photo coming soon";return d;
 }
